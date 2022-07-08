@@ -2,9 +2,9 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './pages/Cars';
-import Reports from './pages/Add Reservation';
-import Products from './pages/Reservations';
+import Cars from './pages/Cars';
+import AddReservation from './pages/Add Reservation';
+import Reservations from './pages/Reservations';
 
 function App() {
   return (
@@ -12,9 +12,9 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" exact component={Home} />
-          <Route path="/reports" component={Reports} />
-          <Route path="/products" component={Products} />
+          <Route path="/" exact component={Cars} />
+          <Route path="/Add Reservation" component={AddReservation} />
+          <Route path="/Reservations" component={Reservations} />
         </Routes>
       </Router>
     </>
