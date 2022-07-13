@@ -1,36 +1,27 @@
-/* eslint-disable default-param-last */
+import axios from 'axios';
 import { carsURL } from '../../logics/urls';
 
-const FETCH_CARS = 'cars/FETCH_CARS';
-const POST_CAR = 'cars/POST_CAR';
+const FETCH_DATA = 'FETCH_DATA';
 
-const initialState = [];
-
-const getCars = (payload) => ({
-  type: FETCH_CARS,
-  payload,
-});
-
-export const postCar = (payload) => ({
-  type: POST_CAR,
-  payload,
-});
-
-export const fetchCars = () => (dispatch) => {
-  fetch(carsURL).then((res) => res.json()).then((data) => {
-    dispatch(getCars(data.data));
-  });
+const initialState = {
+  cars: [],
 };
 
-const carReducer = (state = initialState, action) => {
+export const fetchCars = async () => {
+  const response = await axios.get(carsURL);
+  return response;
+};
+
+const carReducers = (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_CARS:
-      return [...state, ...action.payload];
-    case POST_CAR:
-      return [...state, action.payload];
+    case FETCH_DATA:
+      return {
+        ...state,
+        cars: action.payload,
+      };
     default:
       return state;
   }
 };
 
-export default carReducer;
+export default carReducers;
