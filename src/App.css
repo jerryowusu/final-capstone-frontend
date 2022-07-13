@@ -52,10 +52,12 @@ li {
   background: none;
   color: #525050;
 }
+
 .single-nav-link-active {
   color: white;
   background: #98be20;
 }
+
 .single-nav-link,
 .single-nav-link-active {
   text-decoration: none;
@@ -114,7 +116,7 @@ li {
 }
 
 .input-field-red:focus {
-  border-bottom: 3px solid #ff0000;
+  border-bottom: 3px solid #f00;
 }
 
 .form-submit-btn,
@@ -123,7 +125,7 @@ li {
 }
 
 .register-form-error-msg {
-  color: #ff0000;
+  color: #f00;
 }
 
 .register-form-success-msg {
@@ -147,14 +149,14 @@ li {
 .login-to-register-link,
 .register-to-login-link {
   text-decoration: none;
-  color: #000000;
+  color: #000;
   margin-left: 3px;
   font-weight: 500;
 }
 
 .form-submit-btn:hover,
 .sign-out-btn:hover {
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #98be20;
   color: #98be20;
   transition: 0.3s;
