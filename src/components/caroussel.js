@@ -5,7 +5,7 @@ const settings = {
   className: 'center',
   centerMode: true,
   infinite: true,
-  centerPadding: '500px',
+  // centerPadding: '70px',
   dots: true,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -18,8 +18,8 @@ const settings = {
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         infinite: true,
         dots: true,
       },
@@ -27,11 +27,11 @@ const settings = {
     {
       breakpoint: 900,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         infinite: true,
         dots: true,
-        centerPadding: '70px',
+        // centerPadding: '70px',
         nextArrow: false,
         prevArrow: false,
       },
@@ -44,7 +44,7 @@ const settings = {
         initialSlide: 1,
         nextArrow: false,
         prevArrow: false,
-        centerPadding: '700px',
+        // centerPadding: '70px',
       },
     },
     {
@@ -54,7 +54,7 @@ const settings = {
         slidesToScroll: 1,
         nextArrow: false,
         prevArrow: false,
-        centerPadding: '600px',
+        // centerPadding: '60px',
       },
     },
     {
@@ -64,7 +64,7 @@ const settings = {
         slidesToScroll: 1,
         nextArrow: false,
         prevArrow: false,
-        centerPadding: '500px',
+        // centerPadding: '50px',
       },
     },
     {
@@ -74,7 +74,7 @@ const settings = {
         slidesToScroll: 1,
         nextArrow: false,
         prevArrow: false,
-        centerPadding: '300px',
+        // centerPadding: '30px',
       },
     },
   ],

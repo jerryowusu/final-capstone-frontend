@@ -28,7 +28,7 @@ export function SampleNextArrow(props) {
       role="button"
       tabIndex={0}
     >
-      Next
+      Prev
     </div>
   );
 }
@@ -59,7 +59,7 @@ export function SamplePrevArrow(props) {
       role="button"
       tabIndex={0}
     >
-      Nex
+      Next
 
     </div>
   );
