@@ -8,11 +8,160 @@
 }
 
 .home,
-.reports,
-.products {
+.reservations,
+.add-reservation {
   display: flex;
   height: 90vh;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+a {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.authentication-section {
+  margin-top: 100px;
+}
+
+.nav-logo {
+  width: 70px;
+}
+
+.nav-links {
+  margin-top: 100px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.logged-out {
+  justify-content: flex-end;
+}
+
+.single-nav-link {
+  background: none;
+  color: #525050;
+}
+.single-nav-link-active {
+  color: white;
+  background: #98be20;
+}
+.single-nav-link,
+.single-nav-link-active {
+  text-decoration: none;
+  padding: 11px 0 35px 5px;
+  height: 35px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sign-out-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 35%;
+  height: 30px;
+  width: 70px;
+  margin-left: -10px;
+  border: none;
+  color: white;
+  background: #98be20;
+  font-weight: bold;
+}
+
+.register-page-heading,
+.login-page-heading {
+  text-align: center;
+  font-size: 39px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#registeration-form,
+#login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+}
+
+.input-field,
+.form-submit-btn {
+  margin-top: 12px;
+  padding: 10px 0;
+}
+
+.input-field {
+  margin-top: 12px;
+  padding: 10px 5px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #98be20;
+  font-weight: bold;
+  transition: 0.1s;
+  font-size: 18px;
+}
+
+.input-field:focus {
+  border-bottom: 3px solid #98be20;
+}
+
+.input-field-red:focus {
+  border-bottom: 3px solid #ff0000;
+}
+
+.form-submit-btn,
+.sign-out-btn {
+  border-radius: 5px;
+}
+
+.register-form-error-msg {
+  color: #ff0000;
+}
+
+.register-form-success-msg {
+  color: #98be20;
+}
+
+.register-form-error-msg,
+.register-form-success-msg {
+  font-size: 15px;
+  text-align: center;
+  margin: 12px 0;
+}
+
+.login-to-register,
+.register-to-login {
+  text-align: center;
+  margin: 12px 0;
+  color: #00000080;
+}
+
+.login-to-register-link,
+.register-to-login-link {
+  text-decoration: none;
+  color: #000000;
+  margin-left: 3px;
+  font-weight: 500;
+}
+
+.form-submit-btn:hover,
+.sign-out-btn:hover {
+  background-color: #ffffff;
+  border: 1px solid #98be20;
+  color: #98be20;
+  transition: 0.3s;
+}
+
+.cars h1 {
+  color: #98be20;
+  text-align: center;
+  margin-left: 10px;
 }
