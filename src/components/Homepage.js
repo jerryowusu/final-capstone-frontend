@@ -19,8 +19,6 @@ const Homepage = () => {
     handleFetchCars();
   }, []);
 
-  console.log(cars);
-
   return (
     <div className="home-container">
       <h1>Available Cars</h1>

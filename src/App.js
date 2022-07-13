@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-// import Cars from './redux/Cars/cars';
 import Reservations from './redux/Reservations/reservation';
 import Login from './components/Login';
 import Signup from './components/Signup';
