@@ -1,14 +1,14 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/prop-types */
-import './card-details.scss';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
+import './card-details.scss';
 import settings from './caroussel';
 
-const CarDetails = ({ cars }) => {
-  if (cars.length <= 2) {
-    return (
+const CarDetails = ({ cars }) => (
+  cars.length <= 2
+    ? (
       <div className="caroussel_row">
         {
           cars.map((car) => (
@@ -28,11 +28,11 @@ const CarDetails = ({ cars }) => {
           ))
         }
       </div>
-    );
-  }
-  return (
-    <Slider {...settings}>
-      {
+    )
+
+    : (
+      <Slider {...settings}>
+        {
             cars.map((car) => (
               <Link to={`car/${car.id}`} key={car.id}>
                 <div className="car-card">
@@ -49,8 +49,7 @@ const CarDetails = ({ cars }) => {
               </Link>
             ))
           }
-    </Slider>
-  );
-};
+      </Slider>
+    ));
 
 export default CarDetails;
