@@ -6,7 +6,7 @@ import Slider from 'react-slick';
 import './card-details.scss';
 import settings from './caroussel';
 
-const CarDetails = ({ cars }) => (
+const Car = ({ cars }) => (
   cars.length <= 2
     ? (
       <div className="caroussel_row">
@@ -15,7 +15,7 @@ const CarDetails = ({ cars }) => (
             <Link id={car.id} to={`car/${car.id}`} key={car.id}>
               <div className="car-card">
                 <img src={car.image_url} alt={car.name} />
-                <div className="description">
+                <div className="descript">
                   <p>
                     {car.name}
                   </p>
@@ -37,13 +37,10 @@ const CarDetails = ({ cars }) => (
               <Link to={`car/${car.id}`} key={car.id}>
                 <div className="car-card">
                   <img src={car.image_url} alt={car.name} />
-                  <div className="description">
+                  <div>
                     <p>
-                      {car.name}
-                    </p>
-                    <div className="model">
                       {car.model}
-                    </div>
+                    </p>
                   </div>
                 </div>
               </Link>
@@ -52,4 +49,4 @@ const CarDetails = ({ cars }) => (
       </Slider>
     ));
 
-export default CarDetails;
+export default Car;
