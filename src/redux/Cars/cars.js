@@ -1,11 +1,27 @@
-import React from 'react';
+import axios from 'axios';
+import { carsURL } from '../../logics/urls';
 
-function Home() {
-  return (
-    <div className="cars">
-      <h1>Cars</h1>
-    </div>
-  );
-}
+const FETCH_DATA = 'FETCH_DATA';
 
-export default Home;
+const initialState = {
+  cars: [],
+};
+
+export const fetchCars = async () => {
+  const response = await axios.get(carsURL);
+  return response;
+};
+
+const carReducers = (state = initialState, action) => {
+  switch (action.type) {
+    case FETCH_DATA:
+      return {
+        ...state,
+        cars: action.payload,
+      };
+    default:
+      return state;
+  }
+};
+
+export default carReducers;
