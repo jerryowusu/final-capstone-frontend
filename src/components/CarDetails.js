@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/prop-types */
+import './card-details.scss';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
@@ -13,11 +14,14 @@ const CarDetails = ({ cars }) => {
           cars.map((car) => (
             <Link id={car.id} to={`car/${car.id}`} key={car.id}>
               <div className="car-card">
-                <img src={car.car_image} alt={car.name} />
+                <img src={car.image_url} alt={car.name} />
                 <div className="description">
                   <p>
                     {car.name}
                   </p>
+                  <div className="model">
+                    {car.model}
+                  </div>
                 </div>
               </div>
             </Link>
@@ -32,11 +36,14 @@ const CarDetails = ({ cars }) => {
             cars.map((car) => (
               <Link to={`car/${car.id}`} key={car.id}>
                 <div className="car-card">
-                  <img src={car.car_image} alt={car.name} />
+                  <img src={car.image_url} alt={car.name} />
                   <div className="description">
                     <p>
                       {car.name}
                     </p>
+                    <div className="model">
+                      {car.model}
+                    </div>
                   </div>
                 </div>
               </Link>
