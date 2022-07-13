@@ -23,8 +23,8 @@ const Homepage = () => {
     <div className="home-container">
       <h1>Available Cars</h1>
       <h3>For the best, luxurious and comfortable rides, look no further</h3>
-      <div className="cards-container">
-        welcome
+      <div>
+        {/* welcome */}
         <CarDetails cars={cars} />
       </div>
     </div>

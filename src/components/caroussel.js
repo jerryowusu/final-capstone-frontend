@@ -1,19 +1,19 @@
 import React from 'react';
-import { NextArrow, PrevArrow } from './arrows';
+import { SampleNextArrow, SamplePrevArrow } from './arrows';
 
 const settings = {
   className: 'center',
   centerMode: true,
   infinite: true,
-  centerPadding: '70px',
+  centerPadding: '500px',
   dots: true,
-  slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToShow: 1,
+  slidesToScroll: 1,
   swipeToSlide: true,
   lazyLoad: true,
-  nextArrow: <NextArrow />,
-  prevArrow: <PrevArrow />,
-  initialSlide: 0,
+  nextArrow: <SampleNextArrow />,
+  prevArrow: <SamplePrevArrow />,
+  initialSlide: 1,
   responsive: [
     {
       breakpoint: 1024,
@@ -44,7 +44,7 @@ const settings = {
         initialSlide: 1,
         nextArrow: false,
         prevArrow: false,
-        centerPadding: '70px',
+        centerPadding: '700px',
       },
     },
     {
@@ -54,7 +54,7 @@ const settings = {
         slidesToScroll: 1,
         nextArrow: false,
         prevArrow: false,
-        centerPadding: '60px',
+        centerPadding: '600px',
       },
     },
     {
@@ -64,7 +64,7 @@ const settings = {
         slidesToScroll: 1,
         nextArrow: false,
         prevArrow: false,
-        centerPadding: '50px',
+        centerPadding: '500px',
       },
     },
     {
@@ -74,7 +74,7 @@ const settings = {
         slidesToScroll: 1,
         nextArrow: false,
         prevArrow: false,
-        centerPadding: '30px',
+        centerPadding: '300px',
       },
     },
   ],
