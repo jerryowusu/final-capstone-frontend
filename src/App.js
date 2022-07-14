@@ -8,6 +8,7 @@ import Reservations from './redux/Reservations/reservation';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Homepage from './components/Homepage';
+import AddCar from './components/AddCar';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route exact path="/" exactly element={<Homepage />} />
         <Route path="/Reservations" component={Reservations} />
+        <Route path="/add_car" element={<AddCar />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registeration" element={<Signup />} />
       </Routes>
