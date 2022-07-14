@@ -1,15 +1,19 @@
+import axios from 'axios';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteCar } from '../redux/Cars/cars';
+import { carsURL } from '../logics/urls';
+import { deleteCar } from '../redux/Reservations/reservation';
 
 const DeleteCar = () => {
   const cars = useSelector((state) => state.allReservation.cars);
   const dispatch = useDispatch();
 
-  console.log(cars);
+  const deleteOperation = (id) => {
+    axios.delete(`${carsURL}/${id}`);
+  };
 
   const handleDelete = (id) => {
-    deleteCar(id);
+    deleteOperation(id);
     dispatch(deleteCar(id));
   };
 
@@ -18,15 +22,15 @@ const DeleteCar = () => {
       <ul className="cars-container">
         {
           cars.map((car) => (
-            <li className="car-card" key={car.id}>
-              <img className="car-image" src={car.image_url} alt="car_image" width="100px" />
-              <div className="car-details">
-                <span className="car-title">
+            <li key={car.id}>
+              <img src={car.image_url} alt="car_image" width="100px" />
+              <div>
+                <span>
                   {car.name}
                   {' '}
                   {car.model}
                 </span>
-                <button className="btn btn-danger" type="button" onClick={() => handleDelete(car.id)}> Delete</button>
+                <button type="button" onClick={() => handleDelete(car.id)}> Delete</button>
               </div>
             </li>
           ))

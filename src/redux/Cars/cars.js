@@ -20,7 +20,7 @@ export const postCarsToApi = (data) => async (dispatch) => {
 };
 
 export const deleteCar = (id) => async (dispatch) => {
-  await axios.delete(`carsURL/${id}`)
+  await axios.delete(`${carsURL}/${id}`)
     .then((response) => {
       dispatch({ type: DELETE_CAR, payload: response });
     });
@@ -36,7 +36,10 @@ const carReducers = (state = initialState, action) => {
     case POST_DATA:
       return action.payload;
     case DELETE_CAR:
-      return action.payload;
+      return {
+        ...state,
+        cars: state.cars.filter((item) => item.id !== action.payload),
+      };
     default:
       return state;
   }
