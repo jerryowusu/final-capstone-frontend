@@ -8,7 +8,7 @@ const settings = {
   // centerPadding: '70px',
   dots: true,
   slidesToShow: 2,
-  slidesToScroll: 2,
+  slidesToScroll: 1,
   swipeToSlide: true,
   lazyLoad: true,
   nextArrow: <SampleNextArrow />,
