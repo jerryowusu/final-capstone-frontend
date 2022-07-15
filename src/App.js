@@ -10,6 +10,7 @@ import Signup from './components/Signup';
 import Homepage from './components/Homepage';
 import AddCar from './components/AddCar';
 import AddReservationForm from './components/reservations/AddReservationForm';
+import DeleteCar from './components/DeleteCar';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/Reservations" component={Reservations} />
         <Route path="/add_reservations" element={<AddReservationForm />} />
         <Route path="/add_car" element={<AddCar />} />
+        <Route path="/delete_car" element={<DeleteCar />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registeration" element={<Signup />} />
       </Routes>
