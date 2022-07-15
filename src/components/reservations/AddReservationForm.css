@@ -1,25 +1,24 @@
 .input {
-    box-shadow: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
 }
 
 .form {
-    color: black;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    width: 100%;
+  color: black;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  width: 100%;
 }
 
 .border-form {
-    border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 80px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 80px;
 }
