@@ -34,7 +34,7 @@ const Navbar = () => {
       id: 2, path: '/delete_cars', title: 'Delete Car', icon: <AiIcons.AiOutlineDeleteColumn />, cName: 'nav-text',
     },
     {
-      id: 3, path: '/create_reservation', title: 'Reserve Car', icon: <FaCarSide />, cName: 'nav-text',
+      id: 3, path: '/add_reservations', title: 'Reserve Car', icon: <FaCarSide />, cName: 'nav-text',
     },
     {
       id: 4, path: '/reservations', title: 'Reservations', icon: <IoIcons.IoIosPaper />, cName: 'nav-text',
