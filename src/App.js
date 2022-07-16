@@ -10,6 +10,8 @@ import Signup from './components/Signup';
 import Homepage from './components/Homepage';
 import AddCar from './components/AddCar';
 import DeleteCar from './components/DeleteCar';
+// import Reservation from './components/Reservations/Reservation';
+import AddReservation from './components/Reservations/AddReservation';
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <Route exact path="/" exactly element={<Homepage />} />
         <Route path="/Reservations" component={Reservations} />
         <Route path="/add_car" element={<AddCar />} />
+        <Route path="/add_reservation" element={<AddReservation />} />
         <Route path="/delete_car" element={<DeleteCar />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registeration" element={<Signup />} />
