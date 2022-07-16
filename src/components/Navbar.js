@@ -37,7 +37,7 @@ const Navbar = () => {
       id: 3, path: '/add_reservation', title: 'Reserve Car', icon: <FaCarSide />, cName: 'nav-text',
     },
     {
-      id: 4, path: '/reservations', title: 'Reservations', icon: <IoIcons.IoIosPaper />, cName: 'nav-text',
+      id: 4, path: '/my_reservations', title: 'Reservations', icon: <IoIcons.IoIosPaper />, cName: 'nav-text',
     },
   ];
 
