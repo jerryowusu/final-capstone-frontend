@@ -43,7 +43,7 @@ const Navbar = () => {
 
   const loggedOutLinks = [
     {
-      id: 1, path: '/registeration', title: 'Signup', icon: <FaSignInAlt />, cName: 'nav-text',
+      id: 1, path: '/registration', title: 'Signup', icon: <FaSignInAlt />, cName: 'nav-text',
     },
     {
       id: 2, path: '/login', title: 'Login', icon: <FaSignInAlt />, cName: 'nav-text',
