@@ -28,7 +28,6 @@ export const createReserve = (reservation) => ({
 export const reserveCar = (car) => {
   try {
     postCar(car);
-    console.log(car);
   } catch (err) {
     throw Error(err);
   }
