@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getLocalStorage } from '../../logics/localStore';
 import { createReserve, setCars } from '../../redux/Reservations/reservation';
 import { carsURL, reservationsURL } from '../../logics/urls';
+import './addReservation.css';
 
 export const fetchCars = async () => {
   const response = await axios.get(carsURL);
@@ -56,43 +57,41 @@ const AddReservation = () => {
   return (
     <section className="add-reservation-container">
       <form onSubmit={handleSubmit} className="reservation-form">
-        <label htmlFor="city" className="form-group">
-          City:
-          <input
-            id="city"
-            type="text"
-            className="control-form"
-            onChange={(e) => {
-              setCity(e.target.value);
-            }}
-            required
-          />
-        </label>
-        <label htmlFor="car" className="form-group">
-          Car:
-          <select
-            value={option}
-            onChange={(e) => {
-              setOption(e.target.value);
-            }}
-            id="cars"
-          >
-            {
-              cars.map((car) => (
-                <option key={car.id} value={car.id}>
-                  {car.name}
-                </option>
-              ))
-            }
-          </select>
-        </label>
-        <div className="date">
-          Date:
+        <input
+          id="city"
+          type="text"
+          placeholder="Enter City"
+          className="control-form"
+          onChange={(e) => {
+            setCity(e.target.value);
+          }}
+          required
+        />
+        <select
+          value={option}
+          className="control-form"
+          onChange={(e) => {
+            setOption(e.target.value);
+          }}
+          id="cars"
+        >
+          <option>Select a car</option>
+          {
+            cars.map((car) => (
+              <option key={car.id} value={car.id}>
+                {car.name}
+              </option>
+            ))
+          }
+        </select>
+        <div className="control-form">
           <DatePicker
+            placeholderText="Enter Date"
             selected={selectedDate}
             onChange={(date) => setSelectedDate(new Date(`${date.getMonth()}/${date.getDate() + 1}/${date.getFullYear()}`))}
-            dateFormat="dd/MM/yyyy"
+            dateFormat="dd/mm/yyyy"
             showYearDropdown
+            className="date-picker"
             scrollableMonthYearDropdown
             required
           />
