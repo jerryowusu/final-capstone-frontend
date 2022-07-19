@@ -43,7 +43,7 @@ const CarDetails = () => {
             </li>
           </ul>
           <span className="desc_short">Let us satisfy your desire!</span>
-          <Link to="/reservation">
+          <Link to="/add_reservations">
             <button
               type="button"
               className="reserve-btn"
