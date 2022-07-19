@@ -33,13 +33,14 @@ const AddReservation = () => {
 
     if (response.status === 200) {
       dispatch(createReserve(response.data.data));
-      navigate('/my_reservations');
+      navigate('/add_reservations');
     }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     createReservation();
+    e.target.reset();
   };
 
   const handleFetchCars = () => {
