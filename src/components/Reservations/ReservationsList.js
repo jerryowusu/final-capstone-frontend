@@ -26,7 +26,9 @@ const ReservationsList = () => {
     <section className="table-container">
       {
         reservations.map((reservation) => {
-          const { car_id, id, city, date } = reservation;
+          const {
+            car_id, id, city, date,
+          } = reservation;
           return (
             <Reservation
               key={reservation.id}

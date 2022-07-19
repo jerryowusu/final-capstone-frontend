@@ -63,12 +63,18 @@ const Reservation = ({
     <>
       <div className="reservation-holder">
         <div className="img-holder">
-          <img src={Car} alt="car" />
+          <img src={car} alt="car" />
         </div>
         <div className="info-holder">
           <h2>Name: Car Name</h2>
-          <p>City: {city}</p>
-          <p>Date: {date}</p>
+          <p>
+            City:
+            {city}
+          </p>
+          <p>
+            Date:
+            {date}
+          </p>
           <button className="btn btn-danger" type="button" onClick={() => handleDelete(id)}>
             Delete
           </button>
@@ -76,17 +82,23 @@ const Reservation = ({
       </div>
 
       <div className="reservation-holder">
-      <div className="img-holder">
-        <img src={Car} alt="car" />
-      </div>
-      <div className="info-holder">
-        <h2>Name: Car Name</h2>
-        <p>City: {city}</p>
-        <p>Date: {date}</p>
-        <button className="btn btn-danger" type="button" onClick={() => handleDelete(id)}>
-          Delete
-        </button>
-      </div>
+        <div className="img-holder">
+          <img src={Car} alt="car" />
+        </div>
+        <div className="info-holder">
+          <h2>Name: Car Name</h2>
+          <p>
+            City:
+            {city}
+          </p>
+          <p>
+            Date:
+            {date}
+          </p>
+          <button className="btn btn-danger" type="button" onClick={() => handleDelete(id)}>
+            Delete
+          </button>
+        </div>
       </div>
     </>
   );
