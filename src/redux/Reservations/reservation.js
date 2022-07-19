@@ -5,7 +5,7 @@ import postCar from '../../service/reserveCar';
 const FETCH_RESERV = 'FETCH_RESERV';
 const CREATE_RESERV = 'CREATE_RESERV';
 const DELETE_DATA = 'DELETE_DATA';
-const FETCH_CAR = 'FETCH_CAR';
+const FETCH_CARS = 'FETCH_CARS';
 const DELETE_CAR = 'DELETE_CAR';
 const ADD_CAR = 'ADD_CAR';
 
@@ -39,7 +39,7 @@ export const deleteData = (id) => ({
 
 });
 export const setCars = (cars) => ({
-  type: FETCH_CAR,
+  type: FETCH_CARS,
   payload: cars,
 
 });
@@ -68,7 +68,7 @@ const reservationReducers = (state = initialState, action) => {
         ...state,
         reservation: state.reservation.filter((item) => item.id !== action.payload),
       };
-    case FETCH_CAR:
+    case FETCH_CARS:
       return {
         ...state,
         cars: action.payload,
