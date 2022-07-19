@@ -89,15 +89,16 @@ li {
 }
 
 .card-car {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 20px 5px;
   background-color: #fff;
   border-radius: 5px;
 }
+
 .card-car:hover {
-  box-shadow: 0 0 10px #000000;
+  box-shadow: 0 0 10px #000;
   transition: 0.3s;
 }
 
@@ -208,9 +209,9 @@ li {
 .car-dlt-btn:hover,
 .form-submit-btn,
 .add-car-btn {
-  color: #ffffff;
+  color: #fff;
   background-color: #98be20;
-  border: 1px solide #ffffff;
+  border: 1px solid #fff;
   transition: 0.3s ease-in-out;
   font-weight: bolder;
 }
@@ -227,6 +228,7 @@ li {
 .text-center {
   text-align: center;
 }
+
 .add-car-form {
   display: flex;
   flex-direction: column;
