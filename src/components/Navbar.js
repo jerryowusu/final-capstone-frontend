@@ -70,12 +70,12 @@ const Navbar = () => {
             <FaBars onClick={showSidebar} />
           </NavLink>
         </div>
-        <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+        <nav className={sidebar ? 'nav-menu active' : 'nav-menu-hidden'}>
           <ul className="nav-menu-items" onClick={showSidebar}>
+            <img className="nav-logo" src={logo} alt="logo" />
             <li className="navbar-toggle">
               <NavLink to="/" className="menu-bars">
                 <AiIcons.AiOutlineClose />
-                <img className="nav-logo" src={logo} alt="logo" />
               </NavLink>
             </li>
             <div className={loginStatus ? 'nav-links' : 'nav-links logged-out'}>
@@ -121,9 +121,7 @@ const Navbar = () => {
               <FaVimeo className="social-icons" />
               <FaPinterest className="social-icons" />
             </div>
-            <div className="copyrights">
-              <p>&copy; Final Group Capstone 2022</p>
-            </div>
+            <p className="copyrights">&copy; Final Group Capstone 2022</p>
           </ul>
         </nav>
       </IconContext.Provider>

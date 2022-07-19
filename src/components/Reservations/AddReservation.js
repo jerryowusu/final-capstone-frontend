@@ -54,18 +54,21 @@ const AddReservation = () => {
   }, []);
 
   return (
-    <div className="container">
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="city">
+    <section className="add-reservation-container">
+      <form onSubmit={handleSubmit} className="reservation-form">
+        <label htmlFor="city" className="form-group">
           City:
           <input
+            id="city"
             type="text"
+            className="control-form"
             onChange={(e) => {
               setCity(e.target.value);
             }}
+            required
           />
         </label>
-        <label htmlFor="car">
+        <label htmlFor="car" className="form-group">
           Car:
           <select
             value={option}
@@ -83,7 +86,7 @@ const AddReservation = () => {
             }
           </select>
         </label>
-        <div>
+        <div className="date">
           Date:
           <DatePicker
             selected={selectedDate}
@@ -96,7 +99,7 @@ const AddReservation = () => {
         </div>
         <button type="submit" className="form-submit-btn">Submit</button>
       </form>
-    </div>
+    </section>
   );
 };
 

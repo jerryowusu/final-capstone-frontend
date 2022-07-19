@@ -22,15 +22,15 @@ const DeleteCar = () => {
       <ul className="cars-container">
         {
           cars.map((car) => (
-            <li key={car.id}>
-              <img src={car.image_url} alt="car_image" width="100px" />
-              <div>
-                <span>
+            <li className="card-car" key={car.id}>
+              <img className="car-image" src={car.image_url} alt="car_image" width="100px" />
+              <div className="car-detail">
+                <span className="car-title">
                   {car.name}
                   {' '}
                   {car.model}
                 </span>
-                <button type="button" onClick={() => handleDelete(car.id)}> Delete</button>
+                <button className="car-dlt-btn" type="button" onClick={() => handleDelete(car.id)}> Delete</button>
               </div>
             </li>
           ))
