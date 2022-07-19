@@ -1,10 +1,10 @@
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  margin: 0 auto;
 }
 
 /* form input {
@@ -24,52 +24,49 @@ form select {
 } */
 
 form .control-form {
-    border: none;
-    outline: none;
-    padding: 8px 4px;
-    border-bottom: 1px solid #98be20;
-    width: 400px;
-    background: none;   
+  border: none;
+  outline: none;
+  padding: 8px 4px;
+  border-bottom: 1px solid #98be20;
+  width: 400px;
+  background: none;
 }
 
 form .form-submit-btn {
-    padding: 8px 12px;
+  padding: 8px 12px;
 }
 
 .date-picker {
-    border: none;
+  border: none;
 }
 
 
 /* ---- ReservationList.js ---- */
 
 .reservation-holder {
-    width: 70%;
-    display: flex;
-    margin: 10px auto;
-    border: 1px solid #98be20;
-    padding: 15px;
-    gap: 20px;
+  width: 70%;
+  display: flex;
+  margin: 10px auto;
+  border: 1px solid #98be20;
+  padding: 15px;
+  gap: 20px;
 }
 
 .reservation-holder .img-holder {
-    width: 50%;
+  width: 50%;
 }
 
 .reservation-holder img {
-    width: 100%;
+  width: 100%;
 }
 
 .reservation-holder .info-holder {
-    width: 50%;
+  width: 50%;
 }
 
 .reservation-holder .info-holder button {
-    background: #98be20;
-    color: #fff;
-    padding: 8px 14px;
-    margin-top: 10px;
+  background: #98be20;
+  color: #fff;
+  padding: 8px 14px;
+  margin-top: 10px;
 }
-
-
-
