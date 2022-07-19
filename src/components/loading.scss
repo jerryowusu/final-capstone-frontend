@@ -1,0 +1,40 @@
+.loading_container {
+  position: fixed;
+  top: 50%;
+  left: 49%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .pulsion {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #97bf0f;
+    box-shadow: 0 0 0 0 #96bf0fbb;
+    animation: pl2 1.5s infinite linear;
+    position: relative;
+    margin: auto;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      box-shadow: 0 0 0 0 #96bf0fbb;
+      animation: inherit;
+      animation-delay: -0.5s;
+    }
+
+    &::after {
+      animation-delay: -1s;
+    }
+  }
+
+  @keyframes pl2 {
+    100% {
+      box-shadow: 0 0 0 40px #96bf0fbb;
+    }
+  }
+}

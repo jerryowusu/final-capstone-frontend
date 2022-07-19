@@ -34,7 +34,7 @@ const Navbar = () => {
       id: 2, path: '/delete_car', title: 'Delete Car', icon: <AiIcons.AiOutlineDeleteColumn />, cName: 'nav-text',
     },
     {
-      id: 3, path: '/create_reservation', title: 'Reserve Car', icon: <FaCarSide />, cName: 'nav-text',
+      id: 3, path: '/add_reservations', title: 'Reserve Car', icon: <FaCarSide />, cName: 'nav-text',
     },
     {
       id: 4, path: '/reservations', title: 'Reservations', icon: <IoIcons.IoIosPaper />, cName: 'nav-text',
@@ -43,7 +43,7 @@ const Navbar = () => {
 
   const loggedOutLinks = [
     {
-      id: 1, path: '/registeration', title: 'Signup', icon: <FaSignInAlt />, cName: 'nav-text',
+      id: 1, path: '/registration', title: 'Signup', icon: <FaSignInAlt />, cName: 'nav-text',
     },
     {
       id: 2, path: '/login', title: 'Login', icon: <FaSignInAlt />, cName: 'nav-text',

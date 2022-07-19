@@ -1,5 +1,7 @@
 // import { getLocalStorage } from '../../logics/localStore';
 // Action Types
+import postCar from '../../service/reserveCar';
+
 const FETCH_RESERV = 'FETCH_RESERV';
 const CREATE_RESERV = 'CREATE_RESERV';
 const DELETE_DATA = 'DELETE_DATA';
@@ -22,6 +24,14 @@ export const createReserve = (reservation) => ({
   type: CREATE_RESERV,
   payload: reservation,
 });
+
+export const reserveCar = (car) => {
+  try {
+    postCar(car);
+  } catch (err) {
+    throw Error(err);
+  }
+};
 
 export const deleteData = (id) => ({
   type: DELETE_DATA,
