@@ -10,7 +10,6 @@ const AddCar = () => {
 
   return (
     <>
-      <h1 className="text-center">Create and Add New Cars </h1>
       {
             cars.status === 201 ? (
               <Response show={show} setShow={setShow} />

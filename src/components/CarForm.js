@@ -28,6 +28,7 @@ const CarForm = () => {
 
   return (
     <section>
+      <h1 className="text-center">Create and Add New Cars </h1>
       <form onSubmit={handleSubmit} className="add-car-form">
         <input
           className="add-car-input-field input-field"
@@ -69,7 +70,7 @@ const CarForm = () => {
           required
         />
         <button
-          className="add-car-btn"
+          className="add-car-btn add-btn-car"
           type="submit"
         >
           Create Car
