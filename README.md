@@ -1,70 +1,178 @@
-# Getting Started with Create React App
+# Rent A Car
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div id="top"></div>
+<!-- PROJECT LOGO -->
+<div align="center">
+  <a href="https://github.com/jerryowusu/final-capstone-frontend">
+    <img src="./app/assets/images/car_booking_logo.jpg" alt="Logo" width="200" height="150">
+  </a>
 
-## Available Scripts
+  <h1 align="center">Rent A Car </h1>
 
-In the project directory, you can run:
+  <p align="center">
+    A car rental website
+    <br />
 
-### `npm start`
+## Back-end Repository Link
+<a href="https://github.com/Tobinchilongo/Final-Capstone-BackEnd.git">Book A Car Frontend</a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+<!-- About the project -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##  Screenshots
+![Screenshot](app/assets/images/Swagger%20UI.jpg)
 
-### `npm run build`
+## Description 🏗️
+This is a car rental website that allows you to view  a variety of cars and book them at different rates.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## API link
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Cars](https://agile-peak-14047.herokuapp.com/api/v1/cars)
+[Reservations](https://agile-peak-14047.herokuapp.com/api/v1/reservation)
+## Live Demo
 
-### `npm run eject`
+[swagger-ui](https://agile-peak-14047.herokuapp.com/api-docs/index.html)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started 🏁
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites and Dependencies 📜
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+You will be needing:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- A terminal terminal
+- A code editor
+- Ruby (follow the instructions based on your OS)
+  ```bash
+  https://www.ruby-lang.org/en/documentation/installation/
+  ```
+- Rails (follow the instructions based on your OS)
+    ```bash
+    https://guides.rubyonrails.org/getting_started.html#creating-a-new-rails-project-installing-rails
+    ```
 
-## Learn More
+- Postgresql (follow the instructions based on your OS)
+  ```bash
+  https://www.postgresql.org/download/
+  ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Setting Up PostgreSQL
 
-### Code Splitting
+- The postgres installation doesn't setup a user for you, so you'll need to follow these steps to create a user with permission to create databases. You can skip this if this is not your first time using PostgreSQL
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  ```bash
+  sudo -u postgres createuser <Username> -s
+  ```
 
-### Analyzing the Bundle Size
+### Clone this repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+git clone https://github.com/jerryowusu/final-capstone-frontend.git
+```
+### Move into the cloned directory with
 
-### Making a Progressive Web App
+  ```bash
+  cd Final-capstone-frontend
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Setup
 
-### Advanced Configuration
+Install gems with:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+  ```bash
+  npm install
+  ```
 
-### Deployment
+Setup the database with:
+```bash
+rails db:create
+```
+<div>OR</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+rake db:create
+```
 
-### `npm run build` fails to minify
+### Run linter
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npx eslint .
+```
+
+#### Auto-correct
+
+In auto-correct mode, eslint linters offenses will be automatically fixed:
+
+npx eslint . --fix
+
+### Run Project
+
+Start server with:
+
+```bash
+npm start
+```
+
+<!-- ROADMAP -->
+## Built With 🔨
+<div align="center">
+
+|| Languages ||
+|-|-------------|-|
+||![Ruby](https://img.shields.io/badge/-Ruby-000000?style=flat&logo=ruby&logoColor=red)![Ruby on Rails](https://img.shields.io/badge/-Ruby_on_Rails-000000?style=flat&logo=ruby-on-rails&logoColor=blue)![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)||
+
+</div>
+
+<div align="center">
+
+||Tools 🛠️||
+|-|-------------|-|
+||![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)  ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)   ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)  ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)||
+</div>
+
+## Authors ✍️
+<div align="center">
+
+| 👤 Tobin Chilongo Jnr|
+|---|
+| <a target="_blank" href="https://github.com/Tobinchilongo"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github profile"></a>  <a target="_blank" href="https://www.linkedin.com/in/tobin-chilongo-a6736415a/"><img src="https://img.shields.io/badge/-LinkedIn-0077b5?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="Linkedin profile"></a> <a target="_blank" href="https://twitter.com/Tobin_Official"><img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter profile"></a>
+
+| 👤 Candy Inga Cynthia  |
+|---|
+| <a target="_blank" href="https://github.com/cynthiainga"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github profile"></a>  <a target="_blank" href="https://www.linkedin.com/in/cynthia-inga/"><img src="https://img.shields.io/badge/-LinkedIn-0077b5?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="Linkedin profile"></a> <a target="_blank" href="https://twitter.com/CynthiaInga_C"><img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter profile"></a>
+
+| 👤 Jerry Owusu |
+|---|
+| <a target="_blank" href="https://github.com/jerryowusu"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github profile"></a>  <a target="_blank" href="https://linkedin.com/in/jerry-owusu"><img src="https://img.shields.io/badge/-LinkedIn-0077b5?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="Linkedin profile"></a> <a target="_blank" href="https://twitter.com/JerryOwusu"><img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter profile"></a>
+|
+
+</div>
+
+
+## 🤝 Contributors
+
+Contributions, issues, and feature requests are greatly appreciated!
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "improvements".
+
+- Fork the Project
+- Create your Feature Branch (git checkout -b feature/yourfeaturename)
+- Commit your Changes (git commit -m 'Add suggested feature')
+- Push to the Branch (git push origin feature/AmazingFeature)
+- Open a Pull Request
+
+Feel free to check the [issues page](https://github.com/jerryowusu/final-capstone-frontend/issues).
+
+
+## 📝 License
+
+This project is licensed by [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+## Show your support 💪
+Give a ⭐️ if you like this project!
+
+<p align="right">(<a href="#top">back to top</a>)</p>
