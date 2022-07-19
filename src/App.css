@@ -34,10 +34,12 @@ li {
 
 .nav-logo {
   width: 70px;
+  margin-top: 40px;
+  margin-left: 90px;
 }
 
 .nav-links {
-  margin-top: 100px;
+  margin-top: 40px;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -78,6 +80,55 @@ li {
   color: white;
   background: #98be20;
   font-weight: bold;
+}
+
+.cars-container {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 20px;
+}
+
+.card-car {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 5px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.card-car:hover {
+  box-shadow: 0 0 10px #000000;
+  transition: 0.3s;
+}
+
+.car-image {
+  width: 100%;
+  border-radius: 5px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.car-detail {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.car-title {
+  font-size: 20px;
+  margin: 12px 0;
+  font-weight: bold;
+  color: black;
+}
+
+.car-dlt-btn {
+  padding: 5px 10px;
+  background-color: #9cc515;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .register-page-heading,
@@ -154,16 +205,64 @@ li {
   font-weight: 500;
 }
 
+.car-dlt-btn:hover,
+.form-submit-btn,
+.add-car-btn {
+  color: #ffffff;
+  background-color: #98be20;
+  border: 1px solide #ffffff;
+  transition: 0.3s ease-in-out;
+  font-weight: bolder;
+}
+
 .form-submit-btn:hover,
-.sign-out-btn:hover {
+.sign-out-btn:hover,
+.add-car-btn:hover {
   background-color: #fff;
   border: 1px solid #98be20;
   color: #98be20;
   transition: 0.3s;
 }
 
-.cars h1 {
-  color: #98be20;
+.text-center {
   text-align: center;
-  margin-left: 10px;
+}
+.add-car-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.add-car-input-field {
+  margin-bottom: 20px;
+}
+
+.add-reservation-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservation-form {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0 20px 0 250px;
+  }
+
+  .car-card {
+    width: 250px;
+  }
+
+  .nav-logo {
+    width: 90px;
+    margin-top: 60px;
+    margin-left: 90px;
+  }
 }
