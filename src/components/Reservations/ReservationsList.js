@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { reservationsURL } from '../../logics/urls';
 import { setData } from '../../redux/Reservations/reservation';
 import Reservation from './Reservation';
+import './addReservation.css';
 
 const ReservationsList = () => {
   const reservations = useSelector((state) => state.allReservation.reservation);
@@ -22,36 +23,21 @@ const ReservationsList = () => {
   }, []);
 
   return (
-    <section>
-      <table className="table table-borderless w-75">
-        <thead>
-          <tr>
-            <th>Id</th>
-            <th>City</th>
-            <th>Data</th>
-            <th>Car</th>
-            <th className="d-flex justify-content-center">Operation</th>
-          </tr>
-        </thead>
-        <tbody>
-          {
-            reservations.map((reservation) => {
-              const {
-                car_id, id, city, date,
-              } = reservation;
-              return (
-                <Reservation
-                  key={reservation.id}
-                  id={id}
-                  city={city}
-                  date={date}
-                  carId={car_id}
-                />
-              );
-            })
-}
-        </tbody>
-      </table>
+    <section className="table-container">
+      {
+        reservations.map((reservation) => {
+          const { car_id, id, city, date } = reservation;
+          return (
+            <Reservation
+              key={reservation.id}
+              id={id}
+              city={city}
+              date={date}
+              carId={car_id}
+            />
+          );
+        })
+      }
     </section>
   );
 };

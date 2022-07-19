@@ -4,6 +4,8 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { reservationsURL } from '../../logics/urls';
 import { fetchCars } from '../../redux/Cars/cars';
+import Car from '../../assets/images/download.jpeg';
+import './addReservation.css';
 import { deleteData, setCars } from '../../redux/Reservations/reservation';
 
 const Reservation = ({
@@ -39,23 +41,54 @@ const Reservation = ({
     dispatch(deleteData(id));
   };
 
-  return (
-    <tr>
-      <td>{id}</td>
-      <td>{city}</td>
-      <td>{date}</td>
-      {
-      car.length !== 0
-      && <td>{car[0].name}</td>
-    }
+  // return (
+  //   <tr>
+  //     <td>{city}</td>
+  //     <td>{date}</td>
+  //     {
+  //     car.length !== 0
+  //     && <td>{car[0].name}</td>
+  //   }
 
-      <td className="d-flex justify-content-around">
+  //     <td className="d-flex justify-content-around">
+  //       <button className="btn btn-danger" type="button" onClick={() => handleDelete(id)}>
+  //         Delete
+  //       </button>
+
+  //     </td>
+  //   </tr>
+  // );
+
+  return (
+    <>
+      <div className="reservation-holder">
+        <div className="img-holder">
+          <img src={Car} alt="car" />
+        </div>
+        <div className="info-holder">
+          <h2>Name: Car Name</h2>
+          <p>City: {city}</p>
+          <p>Date: {date}</p>
+          <button className="btn btn-danger" type="button" onClick={() => handleDelete(id)}>
+            Delete
+          </button>
+        </div>
+      </div>
+
+      <div className="reservation-holder">
+      <div className="img-holder">
+        <img src={Car} alt="car" />
+      </div>
+      <div className="info-holder">
+        <h2>Name: Car Name</h2>
+        <p>City: {city}</p>
+        <p>Date: {date}</p>
         <button className="btn btn-danger" type="button" onClick={() => handleDelete(id)}>
           Delete
         </button>
-
-      </td>
-    </tr>
+      </div>
+      </div>
+    </>
   );
 };
 
