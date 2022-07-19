@@ -4,7 +4,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/jerryowusu/final-capstone-frontend">
-    <img src="./app/assets/images/car_booking_logo.jpg" alt="Logo" width="200" height="150">
+    <img src="src/assets/images/car_booking_logo.jpg" alt="Logo" width="200" height="150">
   </a>
 
   <h1 align="center">Rent A Car </h1>
@@ -21,13 +21,17 @@
 
 <!-- About the project -->
 
-##  Screenshots
-![Screenshot](app/assets/images/Swagger%20UI.jpg)
+##  Screenshot 1
+
+![home](src/assets/images/home.png)
+
+## Screenshot 2
+![car details](src/assets/images/car_details.png)
+
 
 ## Description 🏗️
 This is a car rental website that allows you to view  a variety of cars and book them at different rates.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## API link
 
@@ -38,35 +42,6 @@ This is a car rental website that allows you to view  a variety of cars and book
 [swagger-ui](https://agile-peak-14047.herokuapp.com/api-docs/index.html)
 
 ## Getting Started 🏁
-
-### Prerequisites and Dependencies 📜
-
-You will be needing:
-
-- A terminal terminal
-- A code editor
-- Ruby (follow the instructions based on your OS)
-  ```bash
-  https://www.ruby-lang.org/en/documentation/installation/
-  ```
-- Rails (follow the instructions based on your OS)
-    ```bash
-    https://guides.rubyonrails.org/getting_started.html#creating-a-new-rails-project-installing-rails
-    ```
-
-- Postgresql (follow the instructions based on your OS)
-  ```bash
-  https://www.postgresql.org/download/
-  ```
-
-
-#### Setting Up PostgreSQL
-
-- The postgres installation doesn't setup a user for you, so you'll need to follow these steps to create a user with permission to create databases. You can skip this if this is not your first time using PostgreSQL
-
-  ```bash
-  sudo -u postgres createuser <Username> -s
-  ```
 
 ### Clone this repository
 
@@ -117,7 +92,6 @@ Start server with:
 npm start
 ```
 
-<!-- ROADMAP -->
 ## Built With 🔨
 <div align="center">
 
