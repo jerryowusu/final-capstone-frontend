@@ -12,14 +12,13 @@
   width: 88%;
   position: absolute;
   padding-top: 3rem;
-  right: 2%;
+  right: -4%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
 
   img {
-    width: 90%;
+    width: 80%;
     height: 80%;
     object-fit: contain;
   }
@@ -69,7 +68,7 @@
 
 @media screen and (max-width: 767px) {
   .home-container {
-    width: 100%;
+    width: 88%;
     position: relative;
     padding-top: 3rem;
     right: 0;

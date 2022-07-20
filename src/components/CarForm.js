@@ -27,8 +27,8 @@ const CarForm = () => {
   };
 
   return (
-    <section>
-      <form onSubmit={handleSubmit} className="add-car-form">
+    <section className="form-page">
+      <form onSubmit={handleSubmit} className="submit-form">
         <input
           className="add-car-input-field input-field"
           placeholder="Car Name"
@@ -69,7 +69,7 @@ const CarForm = () => {
           required
         />
         <button
-          className="add-car-btn"
+          className="submit-button"
           type="submit"
         >
           Create Car

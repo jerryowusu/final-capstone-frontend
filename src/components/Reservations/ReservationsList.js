@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 import axios from 'axios';
 import { useEffect } from 'react';
+import './reservations.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { reservationsURL } from '../../logics/urls';
 import { setData } from '../../redux/Reservations/reservation';
@@ -22,13 +23,13 @@ const ReservationsList = () => {
   }, []);
 
   return (
-    <section>
+    <section className="reservation-list">
       <table className="table table-borderless w-75">
         <thead>
           <tr>
             <th>Id</th>
             <th>City</th>
-            <th>Data</th>
+            <th>Date</th>
             <th>Car</th>
             <th className="d-flex justify-content-center">Operation</th>
           </tr>

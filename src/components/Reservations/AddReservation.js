@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './reservations.scss';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import axios from 'axios';
@@ -55,13 +56,13 @@ const AddReservation = () => {
 
   return (
     <section className="add-reservation-container">
-      <form onSubmit={handleSubmit} className="reservation-form">
+      <form onSubmit={handleSubmit} className="submit-form">
         <label htmlFor="city" className="form-group">
           City:
           <input
             id="city"
             type="text"
-            className="control-form"
+            className="input-field"
             onChange={(e) => {
               setCity(e.target.value);
             }}
@@ -75,6 +76,7 @@ const AddReservation = () => {
             onChange={(e) => {
               setOption(e.target.value);
             }}
+            className="form-group select-cars"
             id="cars"
           >
             {
@@ -97,7 +99,7 @@ const AddReservation = () => {
             required
           />
         </div>
-        <button type="submit" className="form-submit-btn">Submit</button>
+        <button type="submit" className="submit-button">Submit</button>
       </form>
     </section>
   );

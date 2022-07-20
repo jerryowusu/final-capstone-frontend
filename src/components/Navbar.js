@@ -17,7 +17,7 @@ import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { IconContext } from 'react-icons';
-import './Navbar.css';
+import './Navbar.scss';
 import { getLocalStorage, setLocalStorage } from '../logics/localStore';
 import logo from '../assets/images/car_booking_logo.jpg';
 
@@ -72,7 +72,9 @@ const Navbar = () => {
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu-hidden'}>
           <ul className="nav-menu-items" onClick={showSidebar}>
-            <img className="nav-logo" src={logo} alt="logo" />
+            <NavLink to="/" className="">
+              <img className="nav-logo" src={logo} alt="logo" />
+            </NavLink>
             <li className="navbar-toggle">
               <NavLink to="/" className="menu-bars">
                 <AiIcons.AiOutlineClose />
@@ -111,7 +113,7 @@ const Navbar = () => {
             </div>
             {
               loginStatus
-                ? <button onClick={showSignOut} className="sign-out-btn" type="button">Sign out</button>
+                ? <button onClick={showSignOut} className="btn sign-out-btn" type="button">Sign out</button>
                 : ''
             }
             <div className="social-menu">

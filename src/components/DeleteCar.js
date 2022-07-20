@@ -30,7 +30,7 @@ const DeleteCar = () => {
                   {' '}
                   {car.model}
                 </span>
-                <button className="car-dlt-btn" type="button" onClick={() => handleDelete(car.id)}> Delete</button>
+                <button className="delete-button" type="button" onClick={() => handleDelete(car.id)}> Delete</button>
               </div>
             </li>
           ))

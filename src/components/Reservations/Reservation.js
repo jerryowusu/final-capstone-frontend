@@ -11,10 +11,6 @@ const Reservation = ({
 }) => {
   const dispatch = useDispatch();
 
-  //   const [info, setInfo] = useState({
-  //     id: 1, city: '', date: '', car_id: 1,
-  //   });
-
   const cars = useSelector((state) => state.allReservation.cars);
 
   const car = useSelector((state) => state.allReservation.cars.filter((item) => item.id === carId));
@@ -28,11 +24,6 @@ const Reservation = ({
   const deleteReservation = (id) => {
     axios.delete(`${reservationsURL}/${id}`);
   };
-
-  //   const showReservations = async (id) => {
-  //     const response = await axios.get(`${reservationsURL}/${id}`);
-  //     setInfo(response.data.data);
-  //   };
 
   const handleDelete = (id) => {
     deleteReservation(id);
@@ -50,7 +41,7 @@ const Reservation = ({
     }
 
       <td className="d-flex justify-content-around">
-        <button className="btn btn-danger" type="button" onClick={() => handleDelete(id)}>
+        <button className="delete-button" type="button" onClick={() => handleDelete(id)}>
           Delete
         </button>
 
