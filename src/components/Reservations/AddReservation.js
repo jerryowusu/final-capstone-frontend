@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './reservations.scss';
+import './addReservation.css';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import axios from 'axios';
@@ -91,9 +92,11 @@ const AddReservation = () => {
         <div className="date">
           Date:
           <DatePicker
+            placeholderText="Enter Date"
             selected={selectedDate}
             onChange={(date) => setSelectedDate(new Date(`${date.getMonth()}/${date.getDate() + 1}/${date.getFullYear()}`))}
-            dateFormat="dd/MM/yyyy"
+            dateFormat="dd/mm/yyyy"
+            className="date-picker"
             showYearDropdown
             scrollableMonthYearDropdown
             required

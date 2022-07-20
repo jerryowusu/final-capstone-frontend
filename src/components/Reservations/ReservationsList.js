@@ -9,7 +9,7 @@ import Reservation from './Reservation';
 
 const ReservationsList = () => {
   const reservations = useSelector((state) => state.allReservation.reservation);
-  //   const cars = useSelector((state) => state.allReservation.cars);
+  const cars = useSelector((state) => state.allReservation.cars);
 
   const dispatch = useDispatch();
 
@@ -24,22 +24,16 @@ const ReservationsList = () => {
 
   return (
     <section className="reservation-list">
-      <table className="table table-borderless w-75">
-        <thead>
-          <tr>
-            <th>Id</th>
-            <th>City</th>
-            <th>Date</th>
-            <th>Car</th>
-            <th className="d-flex justify-content-center">Operation</th>
-          </tr>
-        </thead>
-        <tbody>
-          {
+      {
             reservations.map((reservation) => {
               const {
                 car_id, id, city, date,
               } = reservation;
+              const { image_url } = cars;
+
+              console.log(cars.name);
+              console.log(reservation);
+
               return (
                 <Reservation
                   key={reservation.id}
@@ -47,12 +41,11 @@ const ReservationsList = () => {
                   city={city}
                   date={date}
                   carId={car_id}
+                  image={image_url}
                 />
               );
             })
 }
-        </tbody>
-      </table>
     </section>
   );
 };

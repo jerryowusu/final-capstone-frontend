@@ -250,6 +250,8 @@ li {
 
 .text-center {
   text-align: center;
+  font-size: 35px;
+  font-weight: 500;
 }
 
 .submit-form {

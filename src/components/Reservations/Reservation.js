@@ -7,7 +7,7 @@ import { fetchCars } from '../../redux/Cars/cars';
 import { deleteData, setCars } from '../../redux/Reservations/reservation';
 
 const Reservation = ({
-  id, city, date, carId,
+  id, city, date, carId, image,
 }) => {
   const dispatch = useDispatch();
 
@@ -31,22 +31,33 @@ const Reservation = ({
   };
 
   return (
-    <tr>
-      <td>{id}</td>
-      <td>{city}</td>
-      <td>{date}</td>
-      {
+    <>
+      <div className="reservation-holder">
+        <div className="img-holder">
+          <img src={image} alt="car" />
+        </div>
+        <div className="info-holder">
+          {
       car.length !== 0
-      && <td>{car[0].name}</td>
+      && <h2>{car[0].name}</h2>
     }
+          <p>
+            City:
+            {' '}
+            {city}
+          </p>
+          <p>
+            Date:
+            {' '}
+            {date}
+          </p>
+          <button className="delete-button" type="button" onClick={() => handleDelete(id)}>
+            Delete
+          </button>
 
-      <td className="d-flex justify-content-around">
-        <button className="delete-button" type="button" onClick={() => handleDelete(id)}>
-          Delete
-        </button>
-
-      </td>
-    </tr>
+        </div>
+      </div>
+    </>
   );
 };
 
