@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import './loading.scss';
-import { fetchCars } from './Reservations/AddReservation';
 import { setCars } from '../redux/Reservations/reservation';
+import { fetchCars } from './Reservations/AddReservation';
 
 const LoadingPage = () => {
   const dispatch = useDispatch();

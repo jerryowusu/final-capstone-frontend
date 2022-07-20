@@ -17,7 +17,7 @@ import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { IconContext } from 'react-icons';
-import './Navbar.css';
+import './Navbar.scss';
 import { getLocalStorage, setLocalStorage } from '../logics/localStore';
 import logo from '../assets/images/car_booking_logo.jpg';
 
@@ -70,12 +70,14 @@ const Navbar = () => {
             <FaBars onClick={showSidebar} />
           </NavLink>
         </div>
-        <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+        <nav className={sidebar ? 'nav-menu active' : 'nav-menu-hidden'}>
           <ul className="nav-menu-items" onClick={showSidebar}>
+            <NavLink to="/" className="">
+              <img className="nav-logo" src={logo} alt="logo" />
+            </NavLink>
             <li className="navbar-toggle">
               <NavLink to="/" className="menu-bars">
                 <AiIcons.AiOutlineClose />
-                <img className="nav-logo" src={logo} alt="logo" />
               </NavLink>
             </li>
             <div className={loginStatus ? 'nav-links' : 'nav-links logged-out'}>
@@ -111,7 +113,7 @@ const Navbar = () => {
             </div>
             {
               loginStatus
-                ? <button onClick={showSignOut} className="sign-out-btn" type="button">Sign out</button>
+                ? <button onClick={showSignOut} className="btn sign-out-btn" type="button">Sign out</button>
                 : ''
             }
             <div className="social-menu">
@@ -121,9 +123,7 @@ const Navbar = () => {
               <FaVimeo className="social-icons" />
               <FaPinterest className="social-icons" />
             </div>
-            <div className="copyrights">
-              <p>&copy; Final Group Capstone 2022</p>
-            </div>
+            <p className="copyrights">&copy; Final Group Capstone 2022</p>
           </ul>
         </nav>
       </IconContext.Provider>

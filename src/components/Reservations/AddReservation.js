@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import './reservations.scss';
+import './addReservation.css';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import axios from 'axios';
@@ -54,49 +56,51 @@ const AddReservation = () => {
   }, []);
 
   return (
-    <div className="container">
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="city">
-          City:
-          <input
-            type="text"
-            onChange={(e) => {
-              setCity(e.target.value);
-            }}
-          />
-        </label>
-        <label htmlFor="car">
-          Car:
-          <select
-            value={option}
-            onChange={(e) => {
-              setOption(e.target.value);
-            }}
-            id="cars"
-          >
-            {
+    <section className="add-reservation-container">
+      <form onSubmit={handleSubmit} className="reservation-form submit-form">
+
+        <input
+          id="city"
+          type="text"
+          placeholder="Enter City"
+          className="control-form"
+          onChange={(e) => {
+            setCity(e.target.value);
+          }}
+          required
+        />
+
+        <select
+          value={option}
+          onChange={(e) => {
+            setOption(e.target.value);
+          }}
+          className="control-form select-cars"
+          id="cars"
+        >
+          {
               cars.map((car) => (
                 <option key={car.id} value={car.id}>
                   {car.name}
                 </option>
               ))
             }
-          </select>
-        </label>
-        <div>
-          Date:
+        </select>
+        <div className="control-form">
           <DatePicker
+            placeholderText="Enter Date"
             selected={selectedDate}
             onChange={(date) => setSelectedDate(new Date(`${date.getMonth()}/${date.getDate() + 1}/${date.getFullYear()}`))}
-            dateFormat="dd/MM/yyyy"
+            dateFormat="dd/mm/yyyy"
+            className="date-picker"
             showYearDropdown
             scrollableMonthYearDropdown
             required
           />
         </div>
-        <button type="submit" className="form-submit-btn">Submit</button>
+        <button type="submit" className="submit-button">Submit</button>
       </form>
-    </div>
+    </section>
   );
 };
 

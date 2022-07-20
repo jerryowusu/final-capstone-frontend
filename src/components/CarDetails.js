@@ -46,7 +46,7 @@ const CarDetails = () => {
           <Link to="/add_reservations">
             <button
               type="button"
-              className="reserve-btn"
+              className="add-button"
             >
               Reserve Car
             </button>

@@ -9,8 +9,10 @@
   margin-left: 2rem;
   font-size: 2rem;
   background: none;
+  display: block;
 }
 
+.nav-menu-hidden,
 .nav-menu {
   background-color: #fff;
   font-weight: 200;
@@ -42,7 +44,7 @@
   text-decoration: none;
   color: #000;
   font-size: 18px;
-  width: 95%;
+  width: 85%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -79,5 +81,33 @@ span {
   align-items: center;
   width: 90%;
   gap: 20px;
-  margin-top: 250px;
+  margin-top: 200px;
+}
+
+.copyrights {
+  margin-top: 17px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-menu-hidden,
+  .nav-menu {
+    transform: translateX(0);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25%;
+    float: left;
+    border-right: 1px solid #0003;
+    margin-right: 20px;
+  }
+
+  .menu-bars {
+    display: none;
+  }
+
+  .copyrights {
+    margin: 25px 0 0 25px;
+    justify-content: center;
+  }
 }
