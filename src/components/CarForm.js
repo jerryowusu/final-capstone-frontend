@@ -28,6 +28,7 @@ const CarForm = () => {
 
   return (
     <section className="form-page">
+      <h1 className="text-center">Create and Add New Cars </h1>
       <form onSubmit={handleSubmit} className="submit-form">
         <input
           className="add-car-input-field input-field"

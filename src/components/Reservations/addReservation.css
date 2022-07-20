@@ -31,9 +31,9 @@ form .control-form {
     background: none;   
 }
 
-form .form-submit-btn {
+/* form .form-submit-btn {
     padding: 8px 12px;
-}
+} */
 
 .date-picker {
     border: none;
@@ -66,6 +66,6 @@ form .form-submit-btn {
 .reservation-holder .info-holder button {
     background: #98be20;
     color: #fff;
-    padding: 8px 14px;
+    /* padding: 8px 14px; */
     margin-top: 10px;
 }

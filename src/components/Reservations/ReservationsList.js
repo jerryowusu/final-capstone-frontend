@@ -4,8 +4,9 @@ import { useEffect } from 'react';
 import './reservations.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { reservationsURL } from '../../logics/urls';
-import { setData } from '../../redux/Reservations/reservation';
+import { setCars, setData } from '../../redux/Reservations/reservation';
 import Reservation from './Reservation';
+import { fetchCars } from './AddReservation';
 
 const ReservationsList = () => {
   const reservations = useSelector((state) => state.allReservation.reservation);
@@ -18,8 +19,14 @@ const ReservationsList = () => {
     dispatch(setData(response.data.data));
   };
 
+  const handleFetchCars = () => {
+    fetchCars().then((response) => {
+      dispatch(setCars(response.data));
+    });
+  };
   useEffect(() => {
     fetchReservations();
+    handleFetchCars();
   }, []);
 
   return (
@@ -30,10 +37,6 @@ const ReservationsList = () => {
                 car_id, id, city, date,
               } = reservation;
               const { image_url } = cars;
-
-              console.log(cars.name);
-              console.log(reservation);
-
               return (
                 <Reservation
                   key={reservation.id}

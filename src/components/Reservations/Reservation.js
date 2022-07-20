@@ -7,7 +7,7 @@ import { fetchCars } from '../../redux/Cars/cars';
 import { deleteData, setCars } from '../../redux/Reservations/reservation';
 
 const Reservation = ({
-  id, city, date, carId, image,
+  id, city, date, carId,
 }) => {
   const dispatch = useDispatch();
 
@@ -34,7 +34,7 @@ const Reservation = ({
     <>
       <div className="reservation-holder">
         <div className="img-holder">
-          <img src={image} alt="car" />
+          <img src={cars.image_url} alt="car" />
         </div>
         <div className="info-holder">
           {
@@ -51,11 +51,11 @@ const Reservation = ({
             {' '}
             {date}
           </p>
-          <button className="delete-button" type="button" onClick={() => handleDelete(id)}>
-            Delete
-          </button>
 
         </div>
+        <button className="delete-button" type="button" onClick={() => handleDelete(id)}>
+          Delete
+        </button>
       </div>
     </>
   );
