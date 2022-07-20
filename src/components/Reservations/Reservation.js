@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import axios from 'axios';
-import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { reservationsURL } from '../../logics/urls';
 import { fetchCars } from '../../redux/Cars/cars';
@@ -33,13 +32,16 @@ const Reservation = ({
   return (
     <>
       <div className="reservation-holder">
-        <div className="img-holder">
-          <img src={cars.image_url} alt="car" />
-        </div>
+
         <div className="info-holder">
           {
-      car.length !== 0
-      && <h2>{car[0].name}</h2>
+            car.length !== 0
+            && (
+            <div className="reservation">
+              <img className="reserved-cars-image" src={car[0].image_url} alt="car" />
+              <h2>{car[0].name}</h2>
+            </div>
+            )
     }
           <p>
             City:

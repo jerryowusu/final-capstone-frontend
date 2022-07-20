@@ -62,6 +62,7 @@ const AddReservation = () => {
         <input
           id="city"
           type="text"
+          placeholder="Enter City"
           className="control-form"
           onChange={(e) => {
             setCity(e.target.value);
