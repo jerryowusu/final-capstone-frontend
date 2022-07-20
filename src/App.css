@@ -86,6 +86,7 @@ li {
 .cars-container {
   display: grid;
   grid-template-columns: auto auto auto;
+
   /* padding: 20px; */
   margin-left: 50px;
   gap: 20px;
@@ -96,9 +97,9 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   /* margin: 30px auto; */
   margin: 20px 5px;
-  background-color: #fff;
   border-radius: 5px;
   background-color: #f5fffa;
 }
@@ -280,6 +281,7 @@ li {
 .add-reservation-container {
   height: 100vh;
   width: 100%;
+
   /* display: flex;
   justify-content: center;
   align-items: center; */
