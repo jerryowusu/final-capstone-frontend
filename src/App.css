@@ -229,7 +229,6 @@ li {
   font: bold 20px/50px 'Lato', sans-serif;
   font-weight: bolder;
   cursor: pointer;
-  margin: auto;
 }
 
 .submit-button:hover,
@@ -254,6 +253,12 @@ li {
   font-weight: 500;
 }
 
+.add-car-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
 .submit-form {
   width: 80%;
   margin: auto;
@@ -269,9 +274,9 @@ li {
 .add-reservation-container {
   height: 100vh;
   width: 100%;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .reservation-form {

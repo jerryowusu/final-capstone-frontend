@@ -31,9 +31,9 @@ form .control-form {
     background: none;   
 }
 
-/* form .form-submit-btn {
+form .form-submit-btn {
     padding: 8px 12px;
-} */
+}
 
 .date-picker {
     border: none;

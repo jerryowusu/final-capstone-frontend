@@ -57,40 +57,35 @@ const AddReservation = () => {
 
   return (
     <section className="add-reservation-container">
-      <form onSubmit={handleSubmit} className="submit-form">
-        <label htmlFor="city" className="form-group">
-          City:
-          <input
-            id="city"
-            type="text"
-            className="input-field"
-            onChange={(e) => {
-              setCity(e.target.value);
-            }}
-            required
-          />
-        </label>
-        <label htmlFor="car" className="form-group">
-          Car:
-          <select
-            value={option}
-            onChange={(e) => {
-              setOption(e.target.value);
-            }}
-            className="form-group select-cars"
-            id="cars"
-          >
-            {
+      <form onSubmit={handleSubmit} className="reservation-form submit-form">
+
+        <input
+          id="city"
+          type="text"
+          className="control-form"
+          onChange={(e) => {
+            setCity(e.target.value);
+          }}
+          required
+        />
+
+        <select
+          value={option}
+          onChange={(e) => {
+            setOption(e.target.value);
+          }}
+          className="control-form select-cars"
+          id="cars"
+        >
+          {
               cars.map((car) => (
                 <option key={car.id} value={car.id}>
                   {car.name}
                 </option>
               ))
             }
-          </select>
-        </label>
-        <div className="date">
-          Date:
+        </select>
+        <div className="control-form">
           <DatePicker
             placeholderText="Enter Date"
             selected={selectedDate}
