@@ -85,10 +85,10 @@ li {
 
 .cars-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
 
   /* padding: 20px; */
-  margin-left: 50px;
+  margin-left: 100px;
   gap: 20px;
 }
 
