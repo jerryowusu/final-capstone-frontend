@@ -1,0 +1,124 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: 0 auto;
+  color: whitesmoke;
+
+  .text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+
+    h1 {
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: rgb(245, 231, 189);
+      font-size: 12px;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+
+  select {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+
+  input::placeholder {
+    color: white;
+  }
+}
+
+form .control-form {
+  outline: none;
+  margin: 10px;
+  padding: 8px 4px;
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 400px;
+  background: none;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.date-picker {
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.reservation-holder {
+  width: 70%;
+  display: flex;
+  margin: 10px auto;
+  border: 1px solid #98be20;
+  padding: 15px;
+  gap: 20px;
+}
+
+.add-reservation-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+  padding: 0;
+  align-items: center;
+  background-color: #99be20e0;
+
+  img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    justify-content: space-between;
+
+    .bars {
+      color: #fff !important;
+    }
+  }
+}
+
+.reservation-holder .img-holder {
+  width: 50%;
+}
+
+.reservation-holder img {
+  width: 100%;
+}
+
+.reservation-holder .info-holder {
+  width: 50%;
+}
+
+.reservation-holder .info-holder button {
+  background: #98be20;
+  color: #fff;
+  margin-top: 10px;
+}
