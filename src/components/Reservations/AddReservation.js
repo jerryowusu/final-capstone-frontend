@@ -1,11 +1,14 @@
+// eslint-disable max-len
 import React, { useEffect, useState } from 'react';
 import './reservations.scss';
-import './addReservation.css';
+import './addReservation.scss';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
+import { FaBars, FaSearch } from 'react-icons/fa';
+import background from '../../assets/images/background_image.jpg';
 import { getLocalStorage } from '../../logics/localStore';
 import { createReserve, setCars } from '../../redux/Reservations/reservation';
 import { carsURL, reservationsURL } from '../../logics/urls';
@@ -57,7 +60,19 @@ const AddReservation = () => {
 
   return (
     <section className="add-reservation-container">
+      <div className="top">
+        <Link to="/">
+          <FaBars />
+        </Link>
+        <FaSearch />
+      </div>
+      <img src={background} alt="background" />
       <form onSubmit={handleSubmit} className="reservation-form submit-form">
+        <div className="text">
+          <h1>Book a Car</h1>
+          <p>We have different versions and models of cars available for rentals. </p>
+          <p>From luxury to basic and limited editions, we got you covered. </p>
+        </div>
 
         <input
           id="city"
@@ -98,7 +113,7 @@ const AddReservation = () => {
             required
           />
         </div>
-        <button type="submit" className="submit-button">Submit</button>
+        <button type="submit" className="submit-button reserve-btn">Reserve</button>
       </form>
     </section>
   );

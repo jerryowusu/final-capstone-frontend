@@ -260,6 +260,10 @@ li {
   font-weight: 500;
 }
 
+.add-car-input-field::placeholder {
+  color: #98be10;
+}
+
 .add-car-form {
   display: flex;
   flex-direction: column;
@@ -281,10 +285,6 @@ li {
 .add-reservation-container {
   height: 100vh;
   width: 100%;
-
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .reservation-form {
