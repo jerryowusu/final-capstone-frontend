@@ -23,7 +23,6 @@ const CarForm = () => {
       user_id: getLocalStorage().user_id,
       image_url: imageUrl,
     };
-    console.log(data);
 
     dispatch(postCarsToApi(data));
 
