@@ -19,9 +19,11 @@ import ReservationsList from './components/Reservations/ReservationsList';
 
 function App() {
   const cars = useSelector((state) => state.allReservation.cars);
+  const path = window.location.pathname;
+
   return (
     <>
-      <Navbar />
+      { path !== '/add_reservations' ? <Navbar /> : null }
       <Routes>
         {!cars.length ? (
           <Route path="/" element={<LoadingPage />} />

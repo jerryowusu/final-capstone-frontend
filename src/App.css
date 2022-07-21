@@ -86,19 +86,14 @@ li {
 .cars-container {
   display: grid;
   grid-template-columns: auto auto;
-
-  /* padding: 20px; */
   margin-left: 100px;
   gap: 20px;
 }
 
 .card-car {
-  /* width: 50%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  /* margin: 30px auto; */
   margin: 20px 5px;
   border-radius: 5px;
   background-color: #f5fffa;
@@ -280,6 +275,17 @@ li {
 
 .add-car-input-field {
   margin-bottom: 20px;
+}
+
+.car-description {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #98be20;
+}
+
+.car-description::placeholder {
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .add-reservation-container {
