@@ -20,8 +20,7 @@
 
 
 ##  Screenshot 1
-
-![home](src/assets/images/home.png)
+![Screenshot from 2022-07-21 10-04-14](https://user-images.githubusercontent.com/65233860/180323089-41ca1a3e-c025-4462-97f4-7a2049736201.png)
 
 ## Screenshot 2
 ![car details](src/assets/images/car_details.png)
@@ -33,7 +32,7 @@ This is a car rental website that allows you to view a variety of cars and book 
 
 ## API link
 
-[Cars](https://agile-peak-14047.herokuapp.com/api/v1/cars)
+[Cars](https://agile-peak-14047.herokuapp.com/api/v1/cars) <br>
 [Reservations](https://agile-peak-14047.herokuapp.com/api/v1/reservation)
 ## Live Demo
 
