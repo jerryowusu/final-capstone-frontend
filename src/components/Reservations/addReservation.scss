@@ -99,6 +99,10 @@ form .control-form {
     position: absolute;
     top: 0;
     justify-content: space-between;
+
+    .bars {
+      color: #fff !important;
+    }
   }
 }
 
@@ -120,6 +124,3 @@ form .control-form {
   margin-top: 10px;
 }
 
-// .nav-menu-hidden {
-//   display: none;
-// }

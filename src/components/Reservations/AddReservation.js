@@ -61,7 +61,7 @@ const AddReservation = () => {
   return (
     <section className="add-reservation-container">
       <div className="top">
-        <Link to="/">
+        <Link className="bars" to="/">
           <FaBars />
         </Link>
         <FaSearch />
