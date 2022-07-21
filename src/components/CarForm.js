@@ -80,6 +80,7 @@ const CarForm = () => {
           rows="10"
           placeholder="Add description"
           onChange={(e) => setDescription(e.target.value)}
+          required
         />
         <button
           className="submit-button"
