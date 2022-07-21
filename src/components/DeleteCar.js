@@ -19,6 +19,7 @@ const DeleteCar = () => {
 
   return (
     <section>
+      <h1 className="text-center">Delete Cars</h1>
       <ul className="cars-container">
         {
           cars.map((car) => (
