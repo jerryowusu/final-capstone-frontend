@@ -22,6 +22,9 @@ const Car = ({ cars }) => (
                   <div className="model">
                     {car.model}
                   </div>
+                  <p>
+                    {car.description}
+                  </p>
                 </div>
               </div>
             </Link>
@@ -42,6 +45,9 @@ const Car = ({ cars }) => (
                       {car.model}
                     </p>
                   </div>
+                  <p className="show-description">
+                    {car.description}
+                  </p>
                 </div>
               </Link>
             ))

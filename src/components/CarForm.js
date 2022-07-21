@@ -8,6 +8,7 @@ const CarForm = () => {
   const [model, setModel] = useState('');
   const [price, setPrice] = useState(0);
   const [imageUrl, setImageUrl] = useState('');
+  const [description, setDescription] = useState('');
 
   const dispatch = useDispatch();
 
@@ -18,9 +19,12 @@ const CarForm = () => {
       name,
       model,
       price,
+      description,
       user_id: getLocalStorage().user_id,
       image_url: imageUrl,
     };
+    console.log(data);
+
     dispatch(postCarsToApi(data));
 
     e.target.reset();
@@ -68,6 +72,15 @@ const CarForm = () => {
           placeholder="Car Image Link"
           onChange={(e) => setImageUrl(e.target.value)}
           required
+        />
+        <textarea
+          className="car-description add-car-input-field"
+          name="description"
+          id="description"
+          cols="30"
+          rows="10"
+          placeholder="Add description"
+          onChange={(e) => setDescription(e.target.value)}
         />
         <button
           className="submit-button"
