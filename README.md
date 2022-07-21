@@ -14,12 +14,10 @@
     <br />
 
 ## Back-end Repository Link
-<a href="https://github.com/Tobinchilongo/Final-Capstone-BackEnd.git">Book A Car Frontend</a>
+<a href="https://github.com/Tobinchilongo/Final-Capstone-BackEnd.git">Book A Car Back-end</a>
 
 </div>
 
-
-<!-- About the project -->
 
 ##  Screenshot 1
 
@@ -30,8 +28,8 @@
 
 
 ## Description 🏗️
-This is a car rental website that allows you to view  a variety of cars and book them at different rates.
 
+This is a car rental website that allows you to view a variety of cars and book them at different rates. User can see all models and model details and rerve car.
 
 ## API link
 
@@ -39,7 +37,7 @@ This is a car rental website that allows you to view  a variety of cars and book
 [Reservations](https://agile-peak-14047.herokuapp.com/api/v1/reservation)
 ## Live Demo
 
-[swagger-ui](https://agile-peak-14047.herokuapp.com/api-docs/index.html)
+[car-rentals](https://jcar-rentals.herokuapp.com/)
 
 ## Getting Started 🏁
 
@@ -56,21 +54,11 @@ git clone https://github.com/jerryowusu/final-capstone-frontend.git
 
 ## Setup
 
-Install gems with:
+Install dependencies with:
 
   ```bash
   npm install
   ```
-
-Setup the database with:
-```bash
-rails db:create
-```
-<div>OR</div>
-
-```bash
-rake db:create
-```
 
 ### Run linter
 
@@ -148,5 +136,11 @@ This project is licensed by [![License: MIT](https://img.shields.io/badge/Licens
 
 ## Show your support 💪
 Give a ⭐️ if you like this project!
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Acknowledgments
+
+- Hat tip to [Murat Korkmaz](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign/modules/173005583) for the design idea.
 
 <p align="right">(<a href="#top">back to top</a>)</p>

@@ -3,11 +3,11 @@ import { SampleNextArrow, SamplePrevArrow } from './arrows';
 
 const settings = {
   className: 'center',
-  centerMode: true,
+  // centerMode: true,
   infinite: true,
-  // centerPadding: '70px',
+  centerPadding: '70px',
   dots: true,
-  slidesToShow: 2,
+  slidesToShow: 3,
   slidesToScroll: 1,
   swipeToSlide: true,
   lazyLoad: true,
