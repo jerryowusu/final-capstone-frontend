@@ -311,4 +311,13 @@ li {
   .nav-logo {
     width: 120px;
   }
+
+  #registeration-form,
+  #login-form {
+    padding-left: 280px;
+  }
+
+  .submit-form {
+    padding-left: 130px;
+  }
 }
