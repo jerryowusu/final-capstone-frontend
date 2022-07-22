@@ -66,7 +66,7 @@ const Login = () => {
         <small className="register-form-error-msg">{errorMsg}</small>
         <span className="login-to-register">
           Not a member?
-          <NavLink className="login-to-register-link" to="/registeration">Register</NavLink>
+          <NavLink className="login-to-register-link" to="/registration">Register</NavLink>
         </span>
         <input onChange={handleInput} className="form-submit-btn" type="submit" value="Login" />
       </form>
