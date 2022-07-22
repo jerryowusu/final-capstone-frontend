@@ -5,7 +5,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import { Routes, Route } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Navbar from './components/Navbar';
-// import Reservations from './redux/Reservations/reservation';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Homepage from './components/Homepage';
@@ -15,7 +14,6 @@ import DeleteCar from './components/DeleteCar';
 import CarDetails from './components/CarDetails';
 import LoadingPage from './components/LoadingPage';
 import ReservationsList from './components/Reservations/ReservationsList';
-// import Reservation from './components/Reservations/Reservation';
 
 function App() {
   const cars = useSelector((state) => state.allReservation.cars);
