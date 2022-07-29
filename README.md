@@ -28,7 +28,7 @@
 
 ## Description 🏗️
 
-This is a car rental website that allows you to view a variety of cars and book them at different rates. User can see all models and model details and rerve car.
+This is a car rental website that allows you to view a variety of cars and book them at different rates. User can see all models and model details and rerve car. You can also delete the cars you don't want to make space for new ones.
 
 ## API link
 
